@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Dashboard | Design Tokens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="topbar">
+      <div><h1>Sales Dashboard</h1><p class="muted">Mobile-first, token-based CSS</p></div>
+      <button class="btn" id="themeToggle" aria-label="Toggle theme">Toggle dark / light</button>
+    </header>
+
+    <section class="dashboard">
+      <article class="card stat"><span class="muted">Revenue</span><strong>₹4,82,000</strong></article>
+      <article class="card stat"><span class="muted">Orders</span><strong>1,284</strong></article>
+      <article class="card stat"><span class="muted">Customers</span><strong>932</strong></article>
+      <article class="card stat"><span class="muted">Growth</span><strong>+12.4%</strong></article>
+
+      <article class="card wide">
+        <h2>Weekly Sales</h2>
+        <div class="bars" role="img" aria-label="Weekly sales bar chart">
+          <span style="height:40%"></span><span style="height:65%"></span><span style="height:50%"></span>
+          <span style="height:85%"></span><span style="height:70%"></span><span style="height:95%"></span><span style="height:60%"></span>
+        </div>
+      </article>
+
+      <article class="card wide">
+        <h2>Recent Activity</h2>
+        <ul class="list">
+          <li><span>New order #1284</span><span class="muted">2 min ago</span></li>
+          <li><span>Payment received</span><span class="muted">15 min ago</span></li>
+          <li><span>New customer joined</span><span class="muted">1 hr ago</span></li>
+          <li><span>Refund processed</span><span class="muted">3 hr ago</span></li>
+        </ul>
+      </article>
+
+      <article class="card full">
+        <h2>Latest Orders</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>ID</th><th>Customer</th><th>Product</th><th>Amount</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>#1284</td><td>Priya</td><td>Wireless Headphones</td><td>₹2,499</td><td>Shipped</td></tr>
+              <tr><td>#1283</td><td>Rahul</td><td>Smart Watch</td><td>₹4,999</td><td>Pending</td></tr>
+              <tr><td>#1282</td><td>Anita</td><td>Backpack</td><td>₹1,299</td><td>Delivered</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
